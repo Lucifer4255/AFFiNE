@@ -3,7 +3,7 @@
   "types": "./index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "sideEffects": false,
   "exports": {

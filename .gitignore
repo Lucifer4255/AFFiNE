@@ -28,7 +28,6 @@ node_modules
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
 !.vscode/settings.template.json
 !.vscode/launch.template.json
 !.vscode/extensions.json
@@ -88,3 +87,4 @@ af.cmd
 
 # playwright
 storageState.json
+config.bat

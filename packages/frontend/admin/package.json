@@ -68,8 +68,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "scripts": {
-    "build": "affine bundle",
-    "dev": "affine bundle --dev",
+    "build": "node init && affine bundle",
+    "dev": "node init && affine bundle --dev",
     "update-shadcn": "shadcn-ui add -p src/components/ui"
   },
   "exports": {

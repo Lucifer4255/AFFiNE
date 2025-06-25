@@ -4,8 +4,8 @@
   "version": "0.22.4",
   "type": "module",
   "scripts": {
-    "build": "affine bundle",
-    "dev": "affine bundle --dev"
+    "build": "node init && affine bundle",
+    "dev": "node init && affine bundle --dev"
   },
   "dependencies": {
     "@affine/component": "workspace:*",

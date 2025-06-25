@@ -3,8 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "typedoc --options ../../typedoc.json",
-    "dev": "nodemon --exec 'typedoc --options ../../typedoc.json' & serve dist/"
+    "build": "node init && typedoc --options ../../typedoc.json",
+    "dev": "node init && nodemon --exec 'typedoc --options ../../typedoc.json' & serve dist/"
   },
   "devDependencies": {
     "nodemon": "^3.1.7",

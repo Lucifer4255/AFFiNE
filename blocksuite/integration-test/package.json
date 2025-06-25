@@ -3,8 +3,8 @@
   "description": "Integration test for BlockSuite",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc",
+    "dev": "node init && vite",
+    "build": "node init && tsc",
     "test:unit": "vitest --browser.headless --run",
     "test:debug": "PWDEBUG=1 npx vitest"
   },

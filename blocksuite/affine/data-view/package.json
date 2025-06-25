@@ -3,7 +3,7 @@
   "description": "Views of database in affine",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "sideEffects": false,
   "keywords": [],

@@ -7,7 +7,7 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "build": "r build.ts"
+    "build": "node init && r build.ts"
   },
   "devDependencies": {
     "@affine-tools/cli": "workspace:*",

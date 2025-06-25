@@ -8,9 +8,9 @@
     "run-test": "./scripts/run-test.ts"
   },
   "scripts": {
-    "build": "affine bundle -p @affine/server",
-    "dev": "nodemon ./src/index.ts",
-    "dev:mail": "email dev -d src/mails",
+    "build": "node init && affine bundle -p @affine/server",
+    "dev": "node init && nodemon ./src/index.ts",
+    "dev:mail": "node init && email dev -d src/mails",
     "test": "ava --concurrency 1 --serial",
     "test:copilot": "ava \"src/__tests__/copilot-*.spec.ts\"",
     "test:coverage": "c8 ava --concurrency 1 --serial",

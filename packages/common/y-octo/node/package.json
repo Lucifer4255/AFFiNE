@@ -35,8 +35,8 @@
   },
   "scripts": {
     "artifacts": "napi artifacts",
-    "build": "napi build --platform --release --no-const-enum",
-    "build:debug": "napi build --platform --no-const-enum",
+    "build": "node init && napi build --platform --release --no-const-enum",
+    "build:debug": "node init && napi build --platform --no-const-enum",
     "universal": "napi universal",
     "test": "NODE_NO_WARNINGS=1 node ./scripts/run-test.mts all",
     "test:watch": "yarn exec ts-node-esm ./scripts/run-test.ts all --watch",

@@ -28,8 +28,8 @@
   "scripts": {
     "test": "node --test ./__tests__/**/*.spec.js",
     "bench": "node ./benchmark/index.js",
-    "build": "napi build --release --strip --no-const-enum",
-    "build:debug": "napi build"
+    "build": "node init && napi build --release --strip --no-const-enum",
+    "build:debug": "node init && napi build"
   },
   "devDependencies": {
     "@napi-rs/cli": "3.0.0-alpha.89",

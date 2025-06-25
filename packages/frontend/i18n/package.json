@@ -9,8 +9,8 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "build": "r build.ts",
-    "dev": "r build.ts --dev"
+    "build": "node init && r build.ts",
+    "dev": "node init && r build.ts --dev"
   },
   "keywords": [],
   "repository": {

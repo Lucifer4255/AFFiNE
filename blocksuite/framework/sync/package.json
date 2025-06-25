@@ -3,7 +3,7 @@
   "description": "BlockSuite data synchronization engine abstraction and implementation.",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "sideEffects": false,
   "keywords": [],

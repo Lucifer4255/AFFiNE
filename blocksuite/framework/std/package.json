@@ -3,7 +3,7 @@
   "description": "Std for blocksuite blocks",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "sideEffects": false,
   "keywords": [],

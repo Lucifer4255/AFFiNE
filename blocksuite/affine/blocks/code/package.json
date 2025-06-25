@@ -3,7 +3,7 @@
   "description": "Code block for BlockSuite.",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "sideEffects": false,
   "keywords": [],

@@ -20,11 +20,11 @@
     "./main/windows-manager": "./src/main/windows-manager/index.ts"
   },
   "scripts": {
-    "start": "electron .",
-    "dev": "cross-env DEV_SERVER_URL=http://localhost:8080 node ./scripts/dev.ts",
-    "dev:prod": "node ./scripts/dev.ts",
-    "build": "cross-env NODE_ENV=production node ./scripts/build-layers.ts",
-    "build:dev": "node ./scripts/build-layers.ts",
+    "start": "node init && electron .",
+    "dev": "node init && cross-env DEV_SERVER_URL=http://localhost:8080 node ./scripts/dev.ts",
+    "dev:prod": "node init && node ./scripts/dev.ts",
+    "build": "node init && cross-env NODE_ENV=production node ./scripts/build-layers.ts",
+    "build:dev": "node init && node ./scripts/build-layers.ts",
     "generate-assets": "node ./scripts/generate-assets.ts",
     "package": "electron-forge package",
     "make": "electron-forge make",

@@ -10,8 +10,8 @@
     "./*": "./src/components/*/index.tsx"
   },
   "scripts": {
-    "dev": "storybook dev -p 6006",
-    "build:storybook": "storybook build"
+    "dev": "node init && storybook dev -p 6006",
+    "build:storybook": "node init && storybook build"
   },
   "peerDependencies": {
     "@blocksuite/affine": "*",

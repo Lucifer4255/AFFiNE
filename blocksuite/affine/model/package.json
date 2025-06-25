@@ -3,7 +3,7 @@
   "description": "Models for BlockSuite in Affine.",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "sideEffects": false,
   "keywords": [],
