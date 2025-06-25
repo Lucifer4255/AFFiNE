@@ -114,15 +114,9 @@ extension MainViewController: UIDocumentPickerDelegate {
         try FileManager.default.copyItem(at: url, to: tempURL)
 
         // Add file attachment using the temporary URL
-        try inputBox.addFileAttachment(tempURL)
+        inputBox.addFileAttachment(tempURL)
       } catch {
-        let alert = UIAlertController(
-          title: "Error",
-          message: "Failed to process file: \(error.localizedDescription)",
-          preferredStyle: .alert
-        )
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
+        print("Failed to copy file: \(error)")
       }
     }
   }
